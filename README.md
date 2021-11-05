@@ -294,7 +294,10 @@ This application is a model inspired by the work BertVS of Li chuan et al. Its p
 Embeddings are generated using the biotransformer with ProtBert-bfd as a backend.
 In this model, and for the same gene (PTEN or BRCA1 C-terminal domain) we use as input 1 csv file containing the mutated sequences with their labels (0: Benign / 1: pathogen) which you will find in the "data" folder. of the application. These files were obtained and filtered from the ClinVar database.
 For the binary classification, we opted for a CNN/BiLSTM architecture with one Conv1D layer, one MaxPooling1D layer and one BiLSTM layer and a fully connected output layer. This classifier will use the concatenation of the two representations as input.
-![alt text] https://github.com/KhalilBR94/PathogenicAaMutation/blob/master/App_drawing.png
+<p align="center">
+  <img width="50%" src="https://github.com/KhalilBR94/PathogenicAaMutation/blob/master/App_drawing.png
+">
+</p>
 
 # Tags
 Fill the tags.json file in this folder:
