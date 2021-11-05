@@ -340,7 +340,7 @@ Fill the tags.json file in this folder:
   ├──examples : #Templates of applications from Deepchain  	
       |  ├──app_with_checkpoint.py # example: app example with checkpoint
       |  ├──torch_classifier.py # example: show how to train a neural network with pre-trained embeddings
-  +- src: #Code to run the application
+  ├──src: #Code to run the application
       |  ├──Results : #folder that contains the results that we will obtain as output: PR_curves, ROC_curve and confusion matrix plots in png format 
       |  ├──__init__.py  # __init__ file to create python module
       |  ├──main_model.py : #Train and evaluation of the model
@@ -349,6 +349,7 @@ Fill the tags.json file in this folder:
       |  ├──train.py : #Training of the model and generation of the best model checkpoint
       |  ├──utilis.py : #a script that includes the functions used by our model
   ├──App drawing.png : #Representation of the application
+  ├──Application_notebook.ipynb #Application code on jupyter notebook
   ├──Readme.md : #How to create an application from DeepChain platform
   ```
 
