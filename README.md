@@ -338,7 +338,7 @@ Fill the tags.json file in this folder:
       |  ├──app_with_checkpoint.py # example: app example with checkpoint
       |  ├──torch_classifier.py # example: show how to train a neural network with pre-trained embeddings
   +- src: #Code to run the application
-      |  ├──Results : #folder that contains the results PR_curves, ROC_curve and confusion matrix plots in png format
+      |  ├──Results : #folder that contains the results that we will obtain as output: PR_curves, ROC_curve and confusion matrix plots in png format 
       |  ├──__init__.py  # __init__ file to create python module
       |  ├──main_model.py : #Train and evaluation of the model
       |  ├──evaluation.py : #Evaluation of the model from the checkpoint generated from train.py (to save time).
