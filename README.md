@@ -329,6 +329,8 @@ Fill the tags.json file in this folder:
 ## App structure
 ```
   ├──checkpoint  #saves the "best" model or weights from train.py. Model checkpoint can be loaded from the state saved to continue the evaluation after running evaluation.py
+     ├──model_20211102194517.hdf5 # Model training checkpoint for BRCA1 dataset
+     ├──model_20211102195022.hdf5 # Model training checkpoint for PTEN dataset
   ├──data
   |  ├──BRCA1_CTerDom.csv : #BRCA1 dataset
   |  ├──PTEN_dataset.csv :  #PTEN dataset
@@ -372,11 +374,13 @@ where the arguments are:
   -o OUTPUT_DIR, --output_dir OUTPUT_DIR
                         [Optional] Folder for output results (ROC_curve and
                         PR_curve). (default="src/Results")
-                        ```
-Example 1: Launch the application with BRCA1 dataset: 
+```
+### Example 1: Launch the application with BRCA1 dataset: 
 
+```
 python src/evaluation.py -d BRCA1 -i data/BRCA1_CTerDom.csv
-
-Example 2: Launch the application with PTEN dataset: 
-
+```
+### Example 2: Launch the application with PTEN dataset: 
+```
 python src/evaluation2.py -d PTEN -i data/Pten_dataset.csv
+
