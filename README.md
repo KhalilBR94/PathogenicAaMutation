@@ -387,4 +387,5 @@ python src/evaluation.py -d BRCA1 -i data/BRCA1_CTerDom.csv
 ### Example 2: Launch the application with PTEN dataset: 
 ```
 python src/evaluation2.py -d PTEN -i data/Pten_dataset.csv
-
+## External links:
+Notebook on Google Colab: https://colab.research.google.com/drive/1oMcPpR6s3J59sMUFACRCm-txuYO3HdDQ?usp=sharing
