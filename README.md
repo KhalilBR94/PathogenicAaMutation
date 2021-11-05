@@ -327,23 +327,25 @@ Fill the tags.json file in this folder:
 - BRCA1-C-Terminal-Domain
 - PTEN
 ## App structure
-  +- checkpoint  #saves the "best" model or weights from train.py. Model checkpoint can be loaded from the state saved to continue the evaluation after running evaluation.py
-  +- data
-  |  +- BRCA1_CTerDom.csv : #BRCA1 dataset
-  |  +- PTEN_dataset.csv :  #PTEN dataset
-  +- examples : #Templates of applications from Deepchain  	
-      |  +-  app_with_checkpoint.py # example: app example with checkpoint
-      |  +-  torch_classifier.py # example: show how to train a neural network with pre-trained embeddings
+```
+  ├──checkpoint  #saves the "best" model or weights from train.py. Model checkpoint can be loaded from the state saved to continue the evaluation after running evaluation.py
+  ├──data
+  |  ├──BRCA1_CTerDom.csv : #BRCA1 dataset
+  |  ├──PTEN_dataset.csv :  #PTEN dataset
+  ├──examples : #Templates of applications from Deepchain  	
+      |  ├──app_with_checkpoint.py # example: app example with checkpoint
+      |  ├──torch_classifier.py # example: show how to train a neural network with pre-trained embeddings
   +- src: #Code to run the application
-      |  +- Results : #folder that contains the results PR_curves, ROC_curve and confusion matrix plots in png format
-      |  +-   __init__.py  # __init__ file to create python module
-      |  +- main_model.py : #Train and evaluation of the model
-      |  +- evaluation.py : #Evaluation of the model from the checkpoint generated from train.py (to save time).
-      |  +- Desc.md : #Description of the application and how to run it
-      |  +- train.py : #Training of the model and generation of the best model checkpoint
-      |  +- utilis.py : #a script that includes the functions used by our model
-  +- App drawing.png : #Representation of the application
-  +- Readme.md : #How to create an application from DeepChain platform
+      |  ├──Results : #folder that contains the results PR_curves, ROC_curve and confusion matrix plots in png format
+      |  ├──__init__.py  # __init__ file to create python module
+      |  ├──main_model.py : #Train and evaluation of the model
+      |  ├──evaluation.py : #Evaluation of the model from the checkpoint generated from train.py (to save time).
+      |  ├──Desc.md : #Description of the application and how to run it
+      |  ├──train.py : #Training of the model and generation of the best model checkpoint
+      |  ├──utilis.py : #a script that includes the functions used by our model
+  ├──App drawing.png : #Representation of the application
+  ├──Readme.md : #How to create an application from DeepChain platform
+  ```
 
 ## How to run the application 
  1) Open a terminal and install CUDA and torch stable version: pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
@@ -360,7 +362,7 @@ A guide to install Conda is available here: https://docs.conda.io/projects/conda
 
 4) Run the application as follow: 
 evaluation.py [-h help] [-d DATASET] [-i INPUT] [-o OUTPUT_DIR] 
-
+```
 where the arguments are:
  -h, --help            show this help message and exit
   -d DATASET, --dataset DATASET
@@ -370,6 +372,7 @@ where the arguments are:
   -o OUTPUT_DIR, --output_dir OUTPUT_DIR
                         [Optional] Folder for output results (ROC_curve and
                         PR_curve). (default="src/Results")
+                        ```
 Example 1: Launch the application with BRCA1 dataset: 
 
 python src/evaluation.py -d BRCA1 -i data/BRCA1_CTerDom.csv
